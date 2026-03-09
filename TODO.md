@@ -1,32 +1,45 @@
-# TODO — EE598 Poly Project Plan (Ordered)
+# TODO — EE598 Poly Project (Book-Aligned)
 
-## Milestone 0 — Repo + build sanity
+## ✅ Milestone 0 — Repo + build sanity
 - [x] Project builds locally with `lake build`
 - [x] Repo is pushed to GitHub (private)
 - [x] Eric added as collaborator and confirmed access
 
-## Milestone 1 — Core data model (positions/directions)
-- [x] Define `Poly` as a container: `Pos : Type`, `Dir : Pos → Type`  (done as `PolyC`)
-- [x] Define the extension/semantics: `⟦P⟧ X = Σ a : Pos, (Dir a → X)`  (done as `eval`)
-- [x] Define `map` for the semantics and prove functor laws (id/comp)  (done as `evalFunctor`)
+## ✅ Milestone 1 — Core containers + lenses (done)
+- [x] `PolyC` as (shapes A, positions B)
+- [x] semantics `eval : X ↦ Σ a, (B a → X)`
+- [x] lens morphisms `Hom` + `map`
+- [x] category instance `Category PolyC`
 
-## Milestone 2 — Morphisms as lenses
-- [x] Define `Lens P Q` with forward-on-shapes and backward-on-positions  (done as `Hom`)
-- [x] Define how a lens induces a function `⟦P⟧ X → ⟦Q⟧ X`  (done as `map`)
-- [x] Define identity lens and composition of lenses  (done as `id`, `comp`)
-- [x] Prove lens composition is associative and identities behave correctly  (done via `Category`)
+## ✅ Milestone 2 — Evaluation as functor + semantics embedding (mostly done)
+- [x] `evalFunctor : Type ⥤ Type`
+- [x] naturality lemma for `map`
+- [x] `homToNatTrans` and `Sem : PolyC ⥤ (Type ⥤ Type)` (after Semantics file compiles)
 
-## Milestone 3 — Category structure
-- [x] Package into a category of polynomials  (done: `instance : Category PolyC`)
+## ✅ Milestone 3 — Algebraic constructors (done, but now formalize universal properties)
+- [x] `sum`, `prod`, `composeObj` + evaluation equivalences
 
-## Milestone 4 — Basic constructors + examples
-- [x] Define coproduct/sum and product (as containers)  (`sum`, `prod`)
-- [x] Verify evaluation laws for sum/product  (`evalSumEquiv`, `evalProdEquiv`)
-- [x] Define container composition (substitution)  (`composeObj`, `evalComposeEquiv`)
-- [ ] Add explicit constant/identity polynomials and small “real” examples (list-like, maybe-like)
+## Milestone 4 — Universal properties in PolyC (nontrivial, category-theoretic)
+- [ ] Prove `sum` is a coproduct in `PolyC` (explicit injections + UP)
+- [ ] Prove `prod` is a product in `PolyC` (explicit projections + UP)
+- [ ] Clean statements: `Hom (sum P Q) R ≃ Hom P R × Hom Q R`, etc.
 
-## Stretch goals (only if time)
-- [ ] Package the semantics as a functor `PolyC ⥤ (Type ⥤ Type)` (lenses ↦ NatTrans)
-- [ ] Relate lens definition to natural transformations more explicitly (injective/faithful statement, optional equivalence under choice)
-- [ ] Explore limits/colimits behavior on positions/directions
-- [ ] Explore connecting theorem to Locally Closed Cartesian Coordinates
+## Milestone 5 — Parallel product ⊗ (Dirichlet product) + symmetric monoidal structure
+- [ ] Define `⊗` on objects and morphisms
+- [ ] Define unit polynomial `y`
+- [ ] Construct isomorphisms: left/right unitor, associator, braiding
+- [ ] Prove distributivity over sums: `(P + Q) ⊗ R ≅ (P ⊗ R) + (Q ⊗ R)` (or similar)
+
+## Milestone 6 — Composition product ⊳ (monoidal structure from composition)
+- [ ] Extend `composeObj` to a bifunctor on morphisms (hard part!)
+- [ ] Construct associator/unitor isomorphisms for ⊳
+- [ ] Show `eval` respects composition up to iso (already have object-level equivalence)
+
+## Milestone 7 — “Final boss”: pick ONE major theorem
+- [ ] Option A: Cartesian closedness (exponentials) for Poly (book Thm 5.32 style)
+- [ ] Option B: Equalizers / limits characterization (“positions limit, directions colimit”)
+
+## Polishing / usability
+- [ ] Reduce `import Mathlib` in Core to narrower imports (optional performance cleanup)
+- [ ] Add `Poly/README.md` or module comments describing dependency graph
+- [ ] Add a few runnable examples and sanity checks
