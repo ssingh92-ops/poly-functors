@@ -19,10 +19,10 @@
 ## ✅ Milestone 3 — Algebraic constructors (done, but now formalize universal properties)
 - [x] `sum`, `prod`, `composeObj` + evaluation equivalences
 
-## Milestone 4 — Universal properties in PolyC (nontrivial, category-theoretic)
-- [ ] Prove `sum` is a coproduct in `PolyC` (explicit injections + UP)
-- [ ] Prove `prod` is a product in `PolyC` (explicit projections + UP)
-- [ ] Clean statements: `Hom (sum P Q) R ≃ Hom P R × Hom Q R`, etc.
+## ✅ Milestone 4 — Universal properties in PolyC (nontrivial, category-theoretic)
+- [x] Prove `sum` is a coproduct in `PolyC` (explicit injections + UP)
+- [x] Prove `prod` is a product in `PolyC` (explicit projections + UP)
+- [x] Clean statements: `Hom (sum P Q) R ≃ Hom P R × Hom Q R`, etc.
 
 ## ✅ Milestone 5 — Parallel product ⊗ (Dirichlet product) + symmetric monoidal structure
 - [x] Define `⊗` on objects and morphisms
