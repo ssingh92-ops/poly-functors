@@ -30,10 +30,10 @@
 - [x] Construct isomorphisms: left/right unitor, associator, braiding
 - [x] Prove distributivity over sums: `(P + Q) ⊗ R ≅ (P ⊗ R) + (Q ⊗ R)` (or similar)
 
-## Milestone 6 — Composition product ⊳ (monoidal structure from composition)
-- [ ] Extend `composeObj` to a bifunctor on morphisms (hard part!)
-- [ ] Construct associator/unitor isomorphisms for ⊳
-- [ ] Show `eval` respects composition up to iso (already have object-level equivalence)
+## ✅ Milestone 6 — Composition product ⊳ (monoidal structure from composition)
+- [x] Extend `composeObj` to a bifunctor on morphisms (hard part!)
+- [x] Construct associator/unitor isomorphisms for ⊳
+- [x] Show `eval` respects composition up to iso (already have object-level equivalence)
 
 ## Milestone 7 — pick ONE major theorem
 - [ ] Option A: Cartesian closedness (exponentials) for Poly (book Thm 5.32 style)
