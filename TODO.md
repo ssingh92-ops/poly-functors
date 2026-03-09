@@ -30,3 +30,4 @@
 - [ ] Define composition product (polynomial composition) and show closure
 - [ ] Relate lens definition to natural transformations more explicitly
 - [ ] Explore limits/colimits behavior on positions/directions
+- [ ] Explore connecting theorem to Locally Closed Cartesian Coordinates
