@@ -24,11 +24,11 @@
 - [ ] Prove `prod` is a product in `PolyC` (explicit projections + UP)
 - [ ] Clean statements: `Hom (sum P Q) R ≃ Hom P R × Hom Q R`, etc.
 
-## Milestone 5 — Parallel product ⊗ (Dirichlet product) + symmetric monoidal structure
-- [ ] Define `⊗` on objects and morphisms
-- [ ] Define unit polynomial `y`
-- [ ] Construct isomorphisms: left/right unitor, associator, braiding
-- [ ] Prove distributivity over sums: `(P + Q) ⊗ R ≅ (P ⊗ R) + (Q ⊗ R)` (or similar)
+## ✅ Milestone 5 — Parallel product ⊗ (Dirichlet product) + symmetric monoidal structure
+- [x] Define `⊗` on objects and morphisms
+- [x] Define unit polynomial `y`
+- [x] Construct isomorphisms: left/right unitor, associator, braiding
+- [x] Prove distributivity over sums: `(P + Q) ⊗ R ≅ (P ⊗ R) + (Q ⊗ R)` (or similar)
 
 ## Milestone 6 — Composition product ⊳ (monoidal structure from composition)
 - [ ] Extend `composeObj` to a bifunctor on morphisms (hard part!)
