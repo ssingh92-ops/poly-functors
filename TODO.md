@@ -37,7 +37,7 @@
 
 ## Milestone 7 — pick ONE major theorem
 - [ ] Option A: Cartesian closedness (exponentials) for Poly (book Thm 5.32 style)
-- [ ] Option B: Equalizers / limits characterization (“positions limit, directions colimit”)
+- [x] Option B: Equalizers / limits characterization (“positions limit, directions colimit”)
 
 ## Polishing / usability
 - [ ] Reduce `import Mathlib` in Core to narrower imports (optional performance cleanup)
