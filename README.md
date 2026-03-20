@@ -1,4 +1,4 @@
-# Poly: polynomial functors as containers in Lean 4
+# Poly: polynomial functors as a Category in Lean 4
 
 This repository develops a Lean 4 library for polynomial functors in the concrete **container** presentation, following the mathematical perspective of Nelson Niu and David Spivak’s *Polynomial Functors*. A polynomial functor is represented by a type of **positions** together with, for each position, a type of **directions**. If someone has not seen this language before, the basic idea is that a position describes one summand or “place” in the polynomial, while the corresponding direction type describes how data branches out from that position. In the library, the central object is `PolyC`, where `A` is the type of positions and `B : A → Type` gives the directions available at each position.
 
