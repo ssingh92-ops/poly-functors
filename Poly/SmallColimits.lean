@@ -3,7 +3,7 @@ import Poly.Coequalizers
 
 /-
 ============================================================
-EE598 — Poly Project
+Poly Project
 File: Poly/SmallColimits.lean
 ============================================================
 
