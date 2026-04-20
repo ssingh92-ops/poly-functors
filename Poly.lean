@@ -58,3 +58,5 @@ import Poly.PositionsDirections
 
 import Poly.Coequalizers
 import Poly.SmallColimits
+
+import Poly.Terminology
