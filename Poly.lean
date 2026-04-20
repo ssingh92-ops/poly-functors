@@ -1,6 +1,6 @@
 /-
 ============================================================
-EE598 — Poly Project
+Poly Project
 File: Poly.lean
 ============================================================
 
@@ -26,15 +26,35 @@ Dependency graph:
 import Poly.Core
 import Poly.Eval
 import Poly.Semantics
+
 import Poly.SumProd
-import Poly.Composition
-import Poly.PFunctorBridge
-import Poly.Examples
 import Poly.Universal
+
+import Poly.Composition
+import Poly.CompOnMorphisms
+import Poly.CompSemantics
+import Poly.CompMonodial
+
 import Poly.Parallel
 import Poly.ParallelDistribute
-import Poly.CompMonoidal
-import Poly.CompOnMorphisms
-import Poly.Composition
-import Poly.CompSemantics
+
 import Poly.PFunctorBridge
+import Poly.Examples
+
+import Poly.Equalizers
+import Poly.SemanticEqualizers
+
+import Poly.Pullbacks
+import Poly.SemanticPullbacks
+import Poly.PullbackPositionsDirections
+
+import Poly.IndexedProducts
+import Poly.IndexedCoproducts
+
+import Poly.FiniteLimits
+import Poly.SmallLimits
+
+import Poly.PositionsDirections
+
+import Poly.Coequalizers
+import Poly.SmallColimits
