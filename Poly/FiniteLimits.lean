@@ -9,7 +9,7 @@ import Poly.PullbackPositionsDirections
 
 /-
 ============================================================
-EE598 — Poly Project
+Poly Project
 File: Poly/FiniteLimits.lean
 ============================================================
 
