@@ -33,7 +33,7 @@ import Poly.Examples
 import Poly.Universal
 import Poly.Parallel
 import Poly.ParallelDistribute
-import Poly.CompMonodial
+import Poly.CompMonoidal
 import Poly.CompOnMorphisms
 import Poly.Composition
 import Poly.CompSemantics
