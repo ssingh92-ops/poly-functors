@@ -2,7 +2,7 @@ import Poly.Core
 
 /-
 ============================================================
-EE598 — Poly Project
+Poly Project
 File: Poly/IndexedCoproducts.lean
 ============================================================
 
