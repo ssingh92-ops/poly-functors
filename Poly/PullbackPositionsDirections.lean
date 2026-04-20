@@ -2,7 +2,7 @@ import Poly.Pullbacks
 
 /-
 ============================================================
-EE598 — Poly Project
+Poly Project
 File: Poly/PullbackPositionsDirections.lean
 ============================================================
 
