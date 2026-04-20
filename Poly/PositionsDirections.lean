@@ -2,7 +2,7 @@ import Poly.SmallLimits
 
 /-
 ============================================================
-EE598 — Poly Project
+Poly Project
 File: Poly/PositionsDirections.lean
 ============================================================
 
