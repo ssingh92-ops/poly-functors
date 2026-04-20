@@ -2,7 +2,7 @@ import Poly.Equalizers
 
 /-
 ============================================================
-EE598 — Poly Project
+Poly Project
 File: Poly/Coequalizers.lean
 ============================================================
 
