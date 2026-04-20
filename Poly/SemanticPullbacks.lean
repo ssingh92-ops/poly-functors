@@ -3,7 +3,7 @@ import Poly.SemanticEqualizers
 
 /-
 ============================================================
-EE598 — Poly Project
+Poly Project
 File: Poly/SemanticPullbacks.lean
 ============================================================
 
