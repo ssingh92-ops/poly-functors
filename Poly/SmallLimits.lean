@@ -2,7 +2,7 @@ import Poly.FiniteLimits
 
 /-
 ============================================================
-EE598 — Poly Project
+Poly Project
 File: Poly/SmallLimits.lean
 ============================================================
 
