@@ -1,6 +1,5 @@
 /-
 ============================================================
-Poly Project
 File: Poly.lean
 ============================================================
 
@@ -13,6 +12,12 @@ It pulls in:
 - Sum/product and composition formulas
 - Bridge to Mathlib PFunctor
 - Examples
+- Universal properties of sums/products
+- Parallel composition and distributivity
+- CompMonoidal structure
+- CompOnMorphisms structure
+- Composition semantics
+- Equalizers and their semantics
 
 Dependency graph:
   Core → Eval → Semantics
@@ -34,6 +39,9 @@ import Poly.Composition
 import Poly.CompOnMorphisms
 import Poly.CompSemantics
 import Poly.CompMonoidal
+import Poly.CompositionProducts
+import Poly.CompositionExamples
+import Poly.CompositionInteractions
 
 import Poly.Parallel
 import Poly.ParallelDistribute
